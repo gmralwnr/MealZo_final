@@ -55,7 +55,7 @@ spring Boot로 구현한 온라인 밀키트 쇼핑몰입니다.
 ## 4. 유즈케이스 다이어그램
 <img src="https://user-images.githubusercontent.com/89569867/165933260-deeb9793-0e85-4686-85d2-75d99bcebaec.jpg" width="100%"><br>
 
-![mealzomypage1](https://user-images.githubusercontent.com/102465955/170423291-811a0ec5-9643-4cf8-94c4-af349d557283.jpg)
+
 
 
 <br><br>
