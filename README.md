@@ -65,25 +65,35 @@ spring Boot로 구현한 온라인 밀키트 쇼핑몰입니다.
 ### 1. 상품 디테일페이지 기능 다수 구현
 <img src="https://user-images.githubusercontent.com/89569867/165934378-78feb0d5-b5ce-4c86-bf48-d9fcc1027743.jpg" width="100%"><br>
 1. 상품 수량 변경 버튼
-2. 장바구니에 담기 / 바로구매 (장바구니는 ajax로 구현)
-3. 찜하기 기능 구현
-4. 구매자에 한하여 리뷰 작성이 가능 (구매 여부 확인 로직 구현)
-
+ - productDetail.jsp
+ 
 ```c
-   <div class="header_3rd">
-				<!-- 카테고리 -->
-				<div id="category">
-					<ul>
-		                  <li class="menu"><a href="productAllForm?sort=recently&sub=y&idx=0">전체보기</a></li>
-		                  <li class="menu"><a href="productForm?kind=&bestyn=y&newyn=&sort=recently&sub=y&idx=0">베스트</a></li>
-		                  <li class="menu"><a href="productForm?kind=&bestyn=&newyn=y&sort=recently&sub=y&idx=0">신제품</a></li>
-		                  <li class="menu"><a href="productForm?kind=한식&bestyn=&newyn=&sort=recently&sub=y&idx=0">한식</a></li>
-		                  <li class="menu"><a href="productForm?kind=중식&bestyn=&newyn=&sort=recently&sub=y&idx=0">중식</a></li>
-		                  <li class="menu"><a href="productForm?kind=양식&bestyn=&newyn=&sort=recently&sub=y&idx=0">양식</a></li>
-		                  <li class="menu" Style="display:none;"><a href="subscribeForm">VIP전용관</a></li>
-               		</ul>
-				</div>
-```		
+<script type="text/javascript">
+
+
+</script>
+
+<tr style="font-size:20px; width:100px;" >
+<td >   
+  <p> 수량 &nbsp; &nbsp; &nbsp;
+  <input type="button" value=" - " onclick="del();"  style="font-size:20px; background:white;">
+  <input type="text" id="quantity" name="quantity" id="quantity" onkeyup="printName()"
+    size="2" value="1"  style="font-size:20px ; text-align:center;"> 
+  <input type="hidden" name="pseq" id="pseq" value="${mproductVO.PSEQ}">
+  <input type="button" value=" + " onclick="add();"  style="font-size:20px; background:white;"><br><br></p>
+ </td></tr>
+ <tr><td>
+  <h2>총 상품금액</h2></td><td><h3><div id="result" name="result" style=" font-size:25px;">
+ </div></h3></td></tr>
+
+```	
+ 
+
+3. 장바구니에 담기 / 바로구매 (장바구니는 ajax로 구현)
+4. 찜하기 기능 구현
+5. 구매자에 한하여 리뷰 작성이 가능 (구매 여부 확인 로직 구현)
+
+	
    <br><br>
 
 ### 2. 주문취소 
