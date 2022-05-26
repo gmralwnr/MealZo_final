@@ -98,6 +98,7 @@ $(document).ready( function () {
 
 </script>
 
+<table>
 <tr style="font-size:20px; width:100px;" >
 <td >   
   <p> 수량 &nbsp; &nbsp; &nbsp;
@@ -111,7 +112,7 @@ $(document).ready( function () {
  <tr><td>
   <h2>총 상품금액</h2></td><td><h3><div id="result" name="result" style=" font-size:25px;">
  </div></h3></td></tr>
-
+</table>
 ```	
  
 
