@@ -69,7 +69,32 @@ spring Boot로 구현한 온라인 밀키트 쇼핑몰입니다.
  
 ```c
 <script type="text/javascript">
+function printName() {
+ 	   const name = document.form1.quantity.value;
+ 	   const name2 = document.getElementById('price2').value;
+ 	   document.getElementById("result").innerText = (name * name2).toLocaleString('ko-KR')+"원";
+    }
+   
 
+    
+function add () {
+    hm2 = document.form1.quantity;
+	hm2.value ++ ;
+	printName();
+
+}
+function del () {
+    hm2 = document.form1.quantity;
+		result = document.form1.result;
+		if (hm2.value > 1) {
+			hm2.value -- ;
+			printName();
+		}
+} 
+
+$(document).ready( function () {
+		printName();
+	});
 
 </script>
 
@@ -80,7 +105,8 @@ spring Boot로 구현한 온라인 밀키트 쇼핑몰입니다.
   <input type="text" id="quantity" name="quantity" id="quantity" onkeyup="printName()"
     size="2" value="1"  style="font-size:20px ; text-align:center;"> 
   <input type="hidden" name="pseq" id="pseq" value="${mproductVO.PSEQ}">
-  <input type="button" value=" + " onclick="add();"  style="font-size:20px; background:white;"><br><br></p>
+  <input type="button" value=" + " onclick="add();"  
+    style="font-size:20px; background:white;"><br><br></p>
  </td></tr>
  <tr><td>
   <h2>총 상품금액</h2></td><td><h3><div id="result" name="result" style=" font-size:25px;">
