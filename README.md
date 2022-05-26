@@ -118,6 +118,67 @@ $(document).ready( function () {
 
 3. 장바구니에 담기 / 바로구매 (장바구니는 ajax로 구현)
 4. 찜하기 기능 구현
+
+ -ProductController.java
+
+``c
+  @RequestMapping("productDetail")
+  public ModelAndView productDetail(HttpServletRequest request, Model model,
+	@RequestParam("pseq")int pseq) {
+	ModelAndView mav = new ModelAndView();
+  if(loginUser != null)paramMap.put("id", loginUser.get("ID")); 
+  paramMap.put("ref_cursor_zzim", null);
+  zs.getlistZzim(paramMap);
+  ArrayList<HashMap<String,Object>> zzimList
+    =(ArrayList<HashMap<String,Object>>)paramMap.get("ref_cursor_zzim");
+    	
+  if(zzimList.size() ==0)model.addAttribute("result",-1);
+    else model.addAttribute("result",1);
+    	 model.addAttribute("pseq",pseq);
+    	 mav.addObject("zzimList" , zzimList);
+    	   
+  paramMap.put("ref_cursor_zzimcnt", null);
+  zs.getZimcount(paramMap);
+  int zzim =Integer.parseInt(paramMap.get("ref_cursor_zzimcnt").toString());
+  //System.out.println("찜갯수" + zzim);
+        mav.addObject("zzimcount", zzim);
+        
+	mav.setViewName("product/productDetail");
+	return mav;
+
+
+``
+ -productDetail.jsp
+ 
+ ``c
+<table>
+<tr><td><c:if test="${ result==-1 }">
+
+  <span class="material-icons"  id="productSearchIcon"  
+        onClick="zzim('${mproductVO.PSEQ}')" style="font-weight:bold;" >favorite_border</span>
+  <div style="font-size:1.5em; text-align: center; font-weight:bold; top:10px; ">
+       <br>찜하기 
+  <c:if test = "${zzimcount>0}">
+       ${zzimcount}
+ </c:if></div></c:if>
+
+<c:if test="${ result==1}">
+
+  <a href="zzimdelete?pseq=${mproductVO.PSEQ}">
+  <span class="material-icons" style="color:red; font-weight:bold;" 
+        id="productSearchIcon">favorite</span></a>
+   <div style="font-size:1.5em; text-align: center; font-weight:bold; top:10px; ">
+         <br>찜하기
+ <c:if test = "${zzimcount>0}">	
+      ${zzimcount}
+</c:if> </div></c:if>
+</td></tr>
+
+</table>
+ ``
+
+
+
 5. 구매자에 한하여 리뷰 작성이 가능 (구매 여부 확인 로직 구현)
 
 	
