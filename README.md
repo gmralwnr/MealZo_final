@@ -69,7 +69,7 @@ spring Boot로 구현한 온라인 밀키트 쇼핑몰입니다.
 3. 찜하기 기능 구현
 4. 구매자에 한하여 리뷰 작성이 가능 (구매 여부 확인 로직 구현)
 
-  <pre> 
+```c
    <div class="header_3rd">
 				<!-- 카테고리 -->
 				<div id="category">
@@ -83,7 +83,7 @@ spring Boot로 구현한 온라인 밀키트 쇼핑몰입니다.
 		                  <li class="menu" Style="display:none;"><a href="subscribeForm">VIP전용관</a></li>
                		</ul>
 				</div>
-	</pre>			
+```		
    <br><br>
 
 ### 2. 주문취소 
