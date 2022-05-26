@@ -121,7 +121,7 @@ $(document).ready( function () {
 
  -ProductController.java
 
-``c
+```c
   @RequestMapping("productDetail")
   public ModelAndView productDetail(HttpServletRequest request, Model model,
 	@RequestParam("pseq")int pseq) {
@@ -147,10 +147,10 @@ $(document).ready( function () {
 	return mav;
 
 
-``
+```
  -productDetail.jsp
  
- ``c
+ ```c
 <table>
 <tr><td><c:if test="${ result==-1 }">
 
@@ -175,7 +175,7 @@ $(document).ready( function () {
 </td></tr>
 
 </table>
- ``
+ ```
 
 
 
