@@ -70,7 +70,20 @@ spring Boot로 구현한 온라인 밀키트 쇼핑몰입니다.
 4. 구매자에 한하여 리뷰 작성이 가능 (구매 여부 확인 로직 구현)
 
    
-   
+   <div class="header_3rd">
+				<!-- 카테고리 -->
+				<div id="category">
+					<ul>
+		                  <li class="menu"><a href="productAllForm?sort=recently&sub=y&idx=0">전체보기</a></li>
+		                  <li class="menu"><a href="productForm?kind=&bestyn=y&newyn=&sort=recently&sub=y&idx=0">베스트</a></li>
+		                  <li class="menu"><a href="productForm?kind=&bestyn=&newyn=y&sort=recently&sub=y&idx=0">신제품</a></li>
+		                  <li class="menu"><a href="productForm?kind=한식&bestyn=&newyn=&sort=recently&sub=y&idx=0">한식</a></li>
+		                  <li class="menu"><a href="productForm?kind=중식&bestyn=&newyn=&sort=recently&sub=y&idx=0">중식</a></li>
+		                  <li class="menu"><a href="productForm?kind=양식&bestyn=&newyn=&sort=recently&sub=y&idx=0">양식</a></li>
+		                  <li class="menu" Style="display:none;"><a href="subscribeForm">VIP전용관</a></li>
+               		</ul>
+				</div>
+				
    <br><br>
 
 ### 2. 주문취소 
