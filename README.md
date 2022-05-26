@@ -119,6 +119,9 @@ $(document).ready( function () {
 3. 장바구니에 담기 / 바로구매 (장바구니는 ajax로 구현)
 4. 찜하기 기능 구현
 
+<img width="59" alt="image" src="https://user-images.githubusercontent.com/102465955/170539102-752a98d0-42c5-447d-9fb1-56b665005f3e.png">
+
+
  -ProductController.java
 
 ```c
