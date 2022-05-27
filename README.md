@@ -7,17 +7,6 @@ spring boot를 이용한 온라인 밀키트 쇼핑몰
         
 <br>
         
-<img src="https://user-images.githubusercontent.com/102465955/170632513-880dd770-5af9-49e2-bab2-afa8e1fdc855.gif" />
-
-
-![image](https://user-images.githubusercontent.com/102465955/170642431-6ed73591-0918-499e-a979-4bcf49e8460a.png)
-
-
-![KakaoTalk_20220406_154500674](https://user-images.githubusercontent.com/102465955/170642662-ca11957f-7e90-421a-a43d-fc78f615c9d7.gif)
-
-
-
-![Uploading KakaoTalk_20220406_154500674.gif…]()
 
 
 ## 0. 목차
@@ -195,6 +184,9 @@ $(document).ready( function () {
 
 5. 구매자에 한하여 리뷰 작성이 가능 (구매 여부 확인 로직 구현)
 
+6. 한 페이지 내에서 클릭시 이동 
+![Animation](https://user-images.githubusercontent.com/102465955/170644015-d9a3697b-88d0-482a-a90f-f7d038c2cc98.gif)
+
 	
    <br><br>
 
@@ -229,13 +221,6 @@ $(document).ready( function () {
 (상품 추가, 삭제시 즉시 변화한다)   
 
    
-   <br><br>
-   
-
-### 6. 롤링배너 관리 시스템 구현
-<img src="https://user-images.githubusercontent.com/89569867/165934391-f36559a4-2f1e-4edd-9c66-df42dff24f15.jpg" width="100%"><br>
-관리자는 관리자페이지에서 메인페이지의 롤링배너를 관리할 수 있다.    
-배너의 순서, 클릭시 이동하는 url, 배너 이미지 등을 수정, 관리할 수 있다.    
 
 <br><br>
 
