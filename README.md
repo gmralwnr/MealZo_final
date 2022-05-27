@@ -73,7 +73,7 @@ spring Boot로 구현한 온라인 밀키트 쇼핑몰입니다.
 ### 1. 상품 디테일페이지 기능 다수 구현
 <img src="https://user-images.githubusercontent.com/89569867/165934378-78feb0d5-b5ce-4c86-bf48-d9fcc1027743.jpg" width="100%"><br>
 
-# 1.상품 수량버튼 & 실시간 총 금액 변경
+#### 1.상품 수량버튼 & 실시간 총 금액 변경
 <br>
  - productDetail.jsp
  
