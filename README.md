@@ -128,6 +128,8 @@ $(document).ready( function () {
 
 <br><br>
 ##### 2. 찜하기 기능 구현
+ 찜 버튼을 누르면 찜 리스트에 담겨지고 RED Heart 로 변경 되며
+ 찜이 된 상품을 다시 클릭하게 되면 빈 Heart 로 
 <br>
 
 <img src="https://user-images.githubusercontent.com/102465955/170539228-ad2faffd-cc31-4c77-a416-fdb98e79d991.png"  width="100%">
@@ -192,11 +194,12 @@ $(document).ready( function () {
 <br>
 
 ##### 3. 구매자에 한하여 리뷰 작성이 가능 (구매 여부 확인 로직 구현)
+         리뷰 리스트는 비회원도 다 보여집니다
 <br><br>
 
 
 
-##### 4. 한 페이지 내에서 클릭시 이동 
+##### 4. 한 페이지 내에서 클릭시 이동 (상품상세, 후기, 리뷰)
 ![Animation](https://user-images.githubusercontent.com/102465955/170644015-d9a3697b-88d0-482a-a90f-f7d038c2cc98.gif)
 
 	
