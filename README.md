@@ -13,6 +13,13 @@ spring boot를 이용한 온라인 밀키트 쇼핑몰
 ![image](https://user-images.githubusercontent.com/102465955/170642431-6ed73591-0918-499e-a979-4bcf49e8460a.png)
 
 
+![KakaoTalk_20220406_154500674](https://user-images.githubusercontent.com/102465955/170642662-ca11957f-7e90-421a-a43d-fc78f615c9d7.gif)
+
+
+
+![Uploading KakaoTalk_20220406_154500674.gif…]()
+
+
 ## 0. 목차
 
 [1. 개요](#1-개요)
