@@ -22,10 +22,11 @@ spring boot를 이용한 온라인 밀키트 쇼핑몰
 [5. 추가적인 기능구현](#5-추가적인-기능구현)
 - [x] 상품 수량버튼 & 실시간 총 금액 변경 
 - [x] 장바구니 & 바로구매(장바구니 ajax로 구현)
-[x] 상품 찜하기
-[x] 장바구니 담기 & 즉시구매
-[x] 공지사항 필독게시물 기능 추가
-[x] 로그인 후 시도 했던 페이지 url 
+- [x] 상품 찜하기
+- [x] 장바구니 담기 & 즉시구매
+- [x] 공지사항 필독게시물 기능 추가
+- [x] 주문  
+- [x] 로그인 후 시도 했던 페이지 url 
 
 <br><br>
 
@@ -72,6 +73,7 @@ spring Boot로 구현한 온라인 밀키트 쇼핑몰입니다.
 ### 1. 상품 디테일페이지 기능 다수 구현
 <img src="https://user-images.githubusercontent.com/89569867/165934378-78feb0d5-b5ce-4c86-bf48-d9fcc1027743.jpg" width="100%"><br>
 1. 상품 수량 변경 버튼
+<br>
  - productDetail.jsp
  
 ```c
@@ -120,12 +122,11 @@ $(document).ready( function () {
   <h2>총 상품금액</h2></td><td><h3><div id="result" name="result" style=" font-size:25px;">
  </div></h3></td></tr>
 </table>
-```	
- 
+```
 
-3. 장바구니에 담기 / 바로구매 (장바구니는 ajax로 구현)
+
 <br><br>
-4. 찜하기 기능 구현
+3. 찜하기 기능 구현
 <br>
 
 <img src="https://user-images.githubusercontent.com/102465955/170539228-ad2faffd-cc31-4c77-a416-fdb98e79d991.png"  width="100%">
@@ -187,8 +188,7 @@ $(document).ready( function () {
 
 </table>
  ```
-
-
+<br>
 
 5. 구매자에 한하여 리뷰 작성이 가능 (구매 여부 확인 로직 구현)
 
@@ -222,13 +222,4 @@ $(document).ready( function () {
 
    
 
-### 5. 헤더 장바구니 버튼에 상품 수량 표시
-<img src="https://user-images.githubusercontent.com/89569867/165934388-aff51d11-fb11-4e49-99bb-c7d7f80ba789.jpg" width="100%"><br>
-회원이 장바구니에 담은 상품 개수를 모든 페이지에서 확인할 수 있도록   
-헤더 장바구니 버튼에 개수를 표시되도록 구현했다.   
-(상품 추가, 삭제시 즉시 변화한다)   
-
-   
-
-<br><br>
 
