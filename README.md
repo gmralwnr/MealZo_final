@@ -9,6 +9,10 @@ spring boot를 이용한 온라인 밀키트 쇼핑몰
         
 <img src="https://user-images.githubusercontent.com/102465955/170632513-880dd770-5af9-49e2-bab2-afa8e1fdc855.gif" />
 
+
+![image](https://user-images.githubusercontent.com/102465955/170642431-6ed73591-0918-499e-a979-4bcf49e8460a.png)
+
+
 ## 0. 목차
 
 [1. 개요](#1-개요)
